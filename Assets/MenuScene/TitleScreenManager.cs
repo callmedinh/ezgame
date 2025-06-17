@@ -1,0 +1,19 @@
+using UnityEngine;
+using Unity.Netcode;
+
+namespace UI
+{
+    public class TitleScreenManager : MonoBehaviour
+    {
+        public void StartNetworkAtHost()
+        {
+            Debug.Log("Starting network at host");
+            NetworkManager.Singleton.StartHost();
+        }
+
+        public void StartNewGame()
+        {
+            StartCoroutine(WorldSaveGameManager.Instance.LoadNewGame());
+        }
+    }
+}
