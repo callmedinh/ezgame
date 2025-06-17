@@ -12,4 +12,9 @@ public class WorldSaveGameManager : Singleton<WorldSaveGameManager>
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(worldSceneIndex);
         yield return null;
     }
+
+    public int GetWorldSceneIndex()
+    {
+        return worldSceneIndex;
+    }
 }

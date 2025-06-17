@@ -1,7 +1,7 @@
 using UnityEngine;
 using Unity.Netcode;
 
-namespace UI
+namespace MenuScene
 {
     public class TitleScreenManager : MonoBehaviour
     {
