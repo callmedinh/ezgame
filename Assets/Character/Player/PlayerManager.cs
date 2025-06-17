@@ -12,7 +12,8 @@ namespace Character.Player
         protected override void Update()
         {
             base.Update();
-            playerLocomotionManager.HandleMovement();
+            if (!IsOwner) return;
+            playerLocomotionManager.HandleAllMovement();
         }
     }
 }
